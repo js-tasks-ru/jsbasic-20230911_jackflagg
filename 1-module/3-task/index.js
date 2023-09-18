@@ -1,4 +1,4 @@
-function ucFirst(str){
+function ucFirst(str) {
   if (str === ''){
     return ''
   } else {
@@ -7,6 +7,5 @@ function ucFirst(str){
   return stringNew;
     }
 }
-
 let peremOne = ucFirst('')
 console.log(peremOne)
