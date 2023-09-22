@@ -10,13 +10,8 @@ function factorial(n) {
     return result
   } else if (n === 0) {
     return 1
-  } else if (n < 0){
-    message = 'Введите значение строго больше нуля!'
-    return message
-  } else if (typeof n != 'number'){
-    message = 'Вы ввели нечисловое значение! Попробуйте еще раз'
-    return message
+  } else if (n < 0 || typeof n != 'number'){
+    return 0
   }
 }
 
-console.log(factorial(8))

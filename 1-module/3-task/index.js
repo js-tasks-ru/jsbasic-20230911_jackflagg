@@ -1,11 +1,5 @@
 function ucFirst(str) {
-  if (str === ''){
-    return ''
-  } else {
-  const peremTwo = str[0].toUpperCase();
-  const stringNew = str.replace(str[0], peremTwo)
-  return stringNew;
-    }
+if (!str) return str;
+return str[0].toUpperCase() + str.slice(1);
 }
-let peremOne = ucFirst('')
-console.log(peremOne)
+

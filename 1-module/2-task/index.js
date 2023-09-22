@@ -10,17 +10,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (name === null){
-    return false
-  } else {
-    const len = name.length;
-    const poiskProbela = name.indexOf(' ');
-    if (name != '' && len >= 4 && poiskProbela === -1){
-      return true
-    } else {
-      return false
-    }
-  }
+    return (Boolean(name) && name.length >= 4 && name.indexOf(' ') === -1)
 }
 
 function sayHello() {
