@@ -1,3 +1,8 @@
 function camelize(str) {
-  // ваш код...
+  let newStr = str.split('');
+  for (const key in newStr) {
+    if (key=='-'){
+      
+    }
+  }
 }
